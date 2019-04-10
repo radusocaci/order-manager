@@ -2,9 +2,9 @@ package Model;
 
 public class Product {
     private int id;
-    private int stockId;
     private String name;
     private String price;
+    private int stockId;
 
     public Product(int stockId, String name, String price) {
         this.stockId = stockId;

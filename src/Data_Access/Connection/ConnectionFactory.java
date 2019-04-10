@@ -8,8 +8,6 @@ public class ConnectionFactory {
     private static final String USER = "root";
     private static final String PASS = "radutare";
 
-    private static ConnectionFactory singleInstance = new ConnectionFactory();
-
     private ConnectionFactory() {
         try {
             Class.forName(DRIVER);
@@ -19,7 +17,7 @@ public class ConnectionFactory {
     }
 
     public static Connection getConnection() {
-        return singleInstance.createConnection();
+        return SingletonHelper.singleInstance.createConnection();
     }
 
     public static void close(Connection connection) {
@@ -62,5 +60,9 @@ public class ConnectionFactory {
         }
 
         return connection;
+    }
+
+    private static class SingletonHelper {
+        private static final ConnectionFactory singleInstance = new ConnectionFactory();
     }
 }
