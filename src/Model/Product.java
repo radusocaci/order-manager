@@ -3,10 +3,20 @@ package Model;
 public class Product {
     private int id;
     private String name;
-    private String price;
+    private int price;
     private int stockId;
 
-    public Product(int stockId, String name, String price) {
+    public Product() {
+    }
+
+    public Product(int id, String name, int price) {
+        this.id = id;
+        this.name = name;
+        this.price = price;
+        this.stockId = stockId;
+    }
+
+    public Product(String name, int price) {
         this.stockId = stockId;
         this.name = name;
         this.price = price;
@@ -36,11 +46,11 @@ public class Product {
         this.name = name;
     }
 
-    public String getPrice() {
+    public int getPrice() {
         return price;
     }
 
-    public void setPrice(String price) {
+    public void setPrice(int price) {
         this.price = price;
     }
 

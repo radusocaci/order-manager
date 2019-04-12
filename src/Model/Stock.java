@@ -4,7 +4,15 @@ public class Stock {
     private int id;
     private int stock;
 
+    public Stock() {
+    }
+
     public Stock(int stock) {
+        this.stock = stock;
+    }
+
+    public Stock(int id, int stock) {
+        this.id = id;
         this.stock = stock;
     }
 

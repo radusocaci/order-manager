@@ -6,6 +6,10 @@ public class Order {
 
     // maybe add client and product ref + tostring method for bill
 
+
+    public Order() {
+    }
+
     public Order(int idProduct, int idCustomer) {
         this.idProduct = idProduct;
         this.idCustomer = idCustomer;

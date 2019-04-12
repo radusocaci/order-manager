@@ -1139,102 +1139,134 @@
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <key id="286" parent="277" name="PRIMARY">
+    <index id="286" parent="277" name="customer_email_uindex">
+      <ColNames>email</ColNames>
+      <Unique>1</Unique>
+      <Type>btree</Type>
+    </index>
+    <index id="287" parent="277" name="customer_address_uindex">
+      <ColNames>address</ColNames>
+      <Unique>1</Unique>
+      <Type>btree</Type>
+    </index>
+    <key id="288" parent="277" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="287" parent="278" name="idProduct">
+    <key id="289" parent="277" name="customer_email_uindex">
+      <ColNames>email</ColNames>
+      <UnderlyingIndexName>customer_email_uindex</UnderlyingIndexName>
+    </key>
+    <key id="290" parent="277" name="customer_address_uindex">
+      <ColNames>address</ColNames>
+      <UnderlyingIndexName>customer_address_uindex</UnderlyingIndexName>
+    </key>
+    <column id="291" parent="278" name="idProduct">
       <Position>1</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="288" parent="278" name="idCustomer">
+    <column id="292" parent="278" name="idCustomer">
       <Position>2</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <index id="289" parent="278" name="order_customer">
+    <index id="293" parent="278" name="order_customer">
       <ColNames>idCustomer</ColNames>
       <Type>btree</Type>
     </index>
-    <key id="290" parent="278" name="PRIMARY">
+    <key id="294" parent="278" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>idProduct
 idCustomer</ColNames>
       <Primary>1</Primary>
     </key>
-    <foreign-key id="291" parent="278" name="order_product">
+    <foreign-key id="295" parent="278" name="order_product">
       <ColNames>idProduct</ColNames>
       <RefSchemaName>warehouse</RefSchemaName>
       <RefTableName>product</RefTableName>
       <RefColNames>id</RefColNames>
       <OnUpdate>cascade</OnUpdate>
     </foreign-key>
-    <foreign-key id="292" parent="278" name="order_customer">
+    <foreign-key id="296" parent="278" name="order_customer">
       <ColNames>idCustomer</ColNames>
       <RefSchemaName>warehouse</RefSchemaName>
       <RefTableName>customer</RefTableName>
       <RefColNames>id</RefColNames>
       <OnUpdate>cascade</OnUpdate>
     </foreign-key>
-    <column id="293" parent="279" name="id">
+    <column id="297" parent="279" name="id">
       <Position>1</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>1</SequenceIdentity>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="294" parent="279" name="name">
+    <column id="298" parent="279" name="name">
       <Position>2</Position>
       <DataType>varchar(20)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="295" parent="279" name="price">
+    <column id="299" parent="279" name="price">
       <Position>3</Position>
-      <DataType>varchar(20)|0s</DataType>
+      <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="296" parent="279" name="stockId">
+    <column id="300" parent="279" name="stockId">
       <Position>4</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <index id="297" parent="279" name="product_stock_fk">
-      <ColNames>stockId</ColNames>
+    <index id="301" parent="279" name="product_name_uindex">
+      <ColNames>name</ColNames>
+      <Unique>1</Unique>
       <Type>btree</Type>
     </index>
-    <key id="298" parent="279" name="PRIMARY">
+    <index id="302" parent="279" name="product_stock_id_fk">
+      <ColNames>stockId</ColNames>
+      <Unique>1</Unique>
+      <Type>btree</Type>
+    </index>
+    <key id="303" parent="279" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
     </key>
-    <foreign-key id="299" parent="279" name="product_stock_fk">
+    <key id="304" parent="279" name="product_name_uindex">
+      <ColNames>name</ColNames>
+      <UnderlyingIndexName>product_name_uindex</UnderlyingIndexName>
+    </key>
+    <key id="305" parent="279" name="product_stock_id_fk">
+      <ColNames>stockId</ColNames>
+      <UnderlyingIndexName>product_stock_id_fk</UnderlyingIndexName>
+    </key>
+    <foreign-key id="306" parent="279" name="product_stock_id_fk">
       <ColNames>stockId</ColNames>
       <RefSchemaName>warehouse</RefSchemaName>
       <RefTableName>stock</RefTableName>
       <RefColNames>id</RefColNames>
-      <OnUpdate>cascade</OnUpdate>
+      <OnDelete>cascade</OnDelete>
     </foreign-key>
-    <column id="300" parent="280" name="id">
+    <column id="307" parent="280" name="id">
       <Position>1</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>1</SequenceIdentity>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="301" parent="280" name="stock">
+    <column id="308" parent="280" name="stock">
       <Position>2</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <key id="302" parent="280" name="PRIMARY">
+    <key id="309" parent="280" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
