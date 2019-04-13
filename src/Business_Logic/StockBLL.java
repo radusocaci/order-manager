@@ -5,6 +5,7 @@ import Business_Logic.validators.Validator;
 import Data_Access.DAO.StockDAO;
 import Model.Stock;
 
+import java.sql.SQLException;
 import java.util.NoSuchElementException;
 import java.util.concurrent.atomic.AtomicInteger;
 
@@ -18,11 +19,11 @@ public class StockBLL {
         validator = new StockValidator();
     }
 
-    public void init() {
+    public void init() throws SQLException {
         stockDAO.initId();
     }
 
-    public int insert(Stock stock) {
+    public int insert(Stock stock) throws SQLException {
         try {
             validator.validate(stock);
             stockDAO.insert(stock);
@@ -35,7 +36,7 @@ public class StockBLL {
         }
     }
 
-    public int update(Stock stock) {
+    public int update(Stock stock) throws SQLException {
         try {
             validator.validate(stock);
             return stockDAO.update(stock, stock.getId()).getId();
@@ -45,11 +46,11 @@ public class StockBLL {
         }
     }
 
-    public void delete(int id) {
+    public void delete(int id) throws SQLException {
         stockDAO.delete(id);
     }
 
-    public void deleteAll() {
+    public void deleteAll() throws SQLException {
         stockDAO.deleteAll();
     }
 

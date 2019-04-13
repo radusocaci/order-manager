@@ -1,7 +1,8 @@
-package Presentation;
+package Presentation.Views;
 
 import javax.swing.*;
 import java.awt.*;
+import java.awt.event.ActionListener;
 
 public class OrderPanel extends JPanel {
     private JButton order;
@@ -17,7 +18,7 @@ public class OrderPanel extends JPanel {
 
     public OrderPanel() {
         order = new JButton("Place Order");
-        generateBill = new JButton("Generate Bill");
+        generateBill = new JButton("Generate Bills");
 
         customerIdLabel = new JLabel("Customer ID");
         productIdLabel = new JLabel("Product ID");
@@ -49,5 +50,25 @@ public class OrderPanel extends JPanel {
 
         setLayout(new FlowLayout(FlowLayout.CENTER, 50, 50));
         add(centerPanel);
+    }
+
+    public String getCustomerIdTextField() {
+        return customerIdTextField.getText();
+    }
+
+    public String getProductIdTextField() {
+        return productIdTextField.getText();
+    }
+
+    public String getQuentityTextField() {
+        return nrItemsTextField.getText();
+    }
+
+    public void setOrderListener(ActionListener listener) {
+        order.addActionListener(listener);
+    }
+
+    public void setGenerateBillListener(ActionListener listener) {
+        generateBill.addActionListener(listener);
     }
 }

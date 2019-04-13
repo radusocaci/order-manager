@@ -1,4 +1,4 @@
-package Presentation;
+package Presentation.Views;
 
 import javax.swing.*;
 import javax.swing.table.DefaultTableCellRenderer;
@@ -42,7 +42,7 @@ public class View extends JFrame {
         setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
     }
 
-    private static JTable createTable(List<? extends Object> objects) {
+    private static JTable createTable(List<? extends Object> objects) throws IndexOutOfBoundsException {
         Field[] fields = objects.get(0).getClass().getDeclaredFields();
         List<Object> objectList = new ArrayList<>();
         Arrays.stream(fields).forEach((field) -> field.setAccessible(true));
@@ -78,11 +78,37 @@ public class View extends JFrame {
         return table;
     }
 
-    public void setCustomerPanel(List<? extends Object> objects) {
-        customerPanel.setCustomerTable(View.createTable(objects));
+    public void updateCustomerPanel(List<? extends Object> objects) {
+        try {
+            JTable table = View.createTable(objects);
+            customerPanel.setCustomerTable(table);
+        } catch (IndexOutOfBoundsException e) {
+            customerPanel.setCustomerTable(new JTable());
+        }
     }
 
-    public void setProductPanel(List<? extends Object> objects) {
-        productPanel.setProductTable(View.createTable(objects));
+    public void updateProductPanel(List<? extends Object> objects) {
+        try {
+            JTable table = View.createTable(objects);
+            productPanel.setProductTable(table);
+        } catch (IndexOutOfBoundsException e) {
+            productPanel.setProductTable(new JTable());
+        }
+    }
+
+    public CustomerPanel getCustomerPanel() {
+        return customerPanel;
+    }
+
+    public ProductPanel getProductPanel() {
+        return productPanel;
+    }
+
+    public OrderPanel getOrderPanel() {
+        return orderPanel;
+    }
+
+    public void showError(String error) {
+        JOptionPane.showMessageDialog(null, error, "Error", JOptionPane.ERROR_MESSAGE);
     }
 }

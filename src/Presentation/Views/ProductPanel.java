@@ -1,7 +1,8 @@
-package Presentation;
+package Presentation.Views;
 
 import javax.swing.*;
 import java.awt.*;
+import java.awt.event.ActionListener;
 
 public class ProductPanel extends JPanel {
     private JTable productTable;
@@ -76,5 +77,40 @@ public class ProductPanel extends JPanel {
         remove(1);
         revalidate();
         repaint();
+    }
+
+    public String getIdTextField() {
+        return idTextField.getText();
+    }
+
+    public String getNameTextField() {
+        return nameTextField.getText();
+    }
+
+    public String getPriceTextField() {
+        return priceTextField.getText();
+    }
+
+    public String getStockTextField() {
+        return stockTextField.getText();
+    }
+
+    public void resetDataPanel() {
+        idTextField.setText("");
+        nameTextField.setText("");
+        priceTextField.setText("");
+        stockTextField.setText("");
+    }
+
+    public void setAddProductListener(ActionListener listener) {
+        addProduct.addActionListener(listener);
+    }
+
+    public void setUpdateProductListener(ActionListener listener) {
+        updateProduct.addActionListener(listener);
+    }
+
+    public void setDeleteProductListener(ActionListener listener) {
+        deleteProduct.addActionListener(listener);
     }
 }

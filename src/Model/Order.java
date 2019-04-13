@@ -1,18 +1,18 @@
 package Model;
 
 public class Order {
+    private int id;
     private int idProduct;
     private int idCustomer;
-
-    // maybe add client and product ref + tostring method for bill
-
+    private int quantity;
 
     public Order() {
     }
 
-    public Order(int idProduct, int idCustomer) {
+    public Order(int idProduct, int idCustomer, int quantity) {
         this.idProduct = idProduct;
         this.idCustomer = idCustomer;
+        this.quantity = quantity;
     }
 
     public int getIdProduct() {
@@ -29,5 +29,21 @@ public class Order {
 
     public void setIdCustomer(int idCustomer) {
         this.idCustomer = idCustomer;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public int getQuantity() {
+        return quantity;
+    }
+
+    public void setQuantity(int quantity) {
+        this.quantity = quantity;
     }
 }

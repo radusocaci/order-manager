@@ -1,7 +1,8 @@
-package Presentation;
+package Presentation.Views;
 
 import javax.swing.*;
 import java.awt.*;
+import java.awt.event.ActionListener;
 
 public class CustomerPanel extends JPanel {
     private JTable customerTable;
@@ -83,5 +84,45 @@ public class CustomerPanel extends JPanel {
         remove(1);
         revalidate();
         repaint();
+    }
+
+    public String getIdTextField() {
+        return idTextField.getText();
+    }
+
+    public String getLastNameTextField() {
+        return lastNameTextField.getText();
+    }
+
+    public String getFirstNameTextField() {
+        return firstNameTextField.getText();
+    }
+
+    public String getEmailTextField() {
+        return emailTextField.getText();
+    }
+
+    public String getAddressTextField() {
+        return addressTextField.getText();
+    }
+
+    public void resetDataPanel() {
+        idTextField.setText("");
+        lastNameTextField.setText("");
+        firstNameTextField.setText("");
+        emailTextField.setText("");
+        addressTextField.setText("");
+    }
+
+    public void setAddCustomerListener(ActionListener listener) {
+        addCustomer.addActionListener(listener);
+    }
+
+    public void setUpdateCustomerListener(ActionListener listener) {
+        updateCustomer.addActionListener(listener);
+    }
+
+    public void setDeleteCustomerListener(ActionListener listener) {
+        deleteCustomer.addActionListener(listener);
     }
 }

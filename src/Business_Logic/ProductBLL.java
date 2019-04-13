@@ -2,77 +2,85 @@ package Business_Logic;
 
 import Business_Logic.validators.PriceValidator;
 import Business_Logic.validators.Validator;
+import Data_Access.DAO.OrderDAO;
 import Data_Access.DAO.ProductDAO;
+import Model.Order;
 import Model.Product;
 import Model.Stock;
 
+import java.sql.SQLException;
 import java.util.List;
 import java.util.NoSuchElementException;
 import java.util.concurrent.atomic.AtomicInteger;
+import java.util.stream.Collectors;
 
 public class ProductBLL {
     private static final AtomicInteger idGenerator = new AtomicInteger(1);
     private ProductDAO productDAO;
     private StockBLL stockBLL;
+    private OrderDAO orderDAO;
     private Validator<Product> validator;
 
     public ProductBLL() {
         this.productDAO = new ProductDAO();
         this.stockBLL = new StockBLL();
         this.validator = new PriceValidator();
-        productDAO.initId();
-        stockBLL.init();
+        this.orderDAO = new OrderDAO();
     }
 
-    public int insert(Product product, int stock) {
+    public int insert(Product product, int stock) throws SQLException, IllegalArgumentException {
+        int stockId = 0;
+
         try {
             validator.validate(product);
 
-            int stockId = stockBLL.insert(new Stock(stock));
+            stockId = stockBLL.insert(new Stock(stock));
             product.setStockId(stockId);
             productDAO.insert(product);
-
             product.setId(idGenerator.getAndIncrement());
 
+            return product.getId();
+        } catch (SQLException ex) {
             try {
                 get(product.getId());
-            } catch (Exception e) {
+            } catch (NoSuchElementException e) {
                 stockBLL.delete(stockId);
             }
 
-            return product.getId();
-        } catch (IllegalArgumentException e) {
-            e.printStackTrace();
-            return -1;
+            throw new SQLException(ex.getMessage());
         }
     }
 
-    public int update(Product product) throws NoSuchElementException {
-        try {
-            get(product.getId());
-            validator.validate(product);
-            return productDAO.update(product, product.getId()).getId();
-        } catch (IllegalArgumentException e) {
-            e.printStackTrace();
-            return -1;
-        }
+    public int update(Product product) throws NoSuchElementException, SQLException, IllegalArgumentException {
+        get(product.getId());
+        validator.validate(product);
+        return productDAO.update(product, product.getId()).getId();
     }
 
-    public void delete(int id) {
+    public void delete(int id) throws NoSuchElementException, SQLException {
+        List<Order> toDelete = orderDAO.findAll().stream().filter((order) -> (order.getIdProduct() == id)).collect(Collectors.toList());
+        for (Order order : toDelete) {
+            orderDAO.delete(order.getId());
+        }
+
         stockBLL.delete(get(id).getStockId());
+
         productDAO.delete(id);
     }
 
-    public void deleteAll() {
+    public void deleteAll() throws SQLException {
         stockBLL.deleteAll();
         productDAO.deleteAll();
+
+        productDAO.initId();
+        stockBLL.init();
     }
 
     public List<Product> getAll() {
         return productDAO.findAll();
     }
 
-    public Product get(int id) {
+    public Product get(int id) throws NoSuchElementException {
         Product product = productDAO.findById(id);
 
         if (product == null) {
@@ -80,5 +88,9 @@ public class ProductBLL {
         }
 
         return product;
+    }
+
+    public StockBLL getStockBLL() {
+        return stockBLL;
     }
 }

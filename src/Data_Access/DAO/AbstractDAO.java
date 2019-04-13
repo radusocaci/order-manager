@@ -20,14 +20,14 @@ public class AbstractDAO<T> {
         this.type = (Class<T>) ((ParameterizedType) getClass().getGenericSuperclass()).getActualTypeArguments()[0];
     }
 
-    public void initId() {
-        String query = "ALTER TABLE " + type.getSimpleName().toLowerCase() + " AUTO_INCREMENT = 1;";
+    public void initId() throws SQLException {
+        String query = "ALTER TABLE `" + type.getSimpleName().toLowerCase() + "` AUTO_INCREMENT = 1;";
 
         executeUpdate(query);
     }
 
     public List<T> findAll() {
-        String query = "SELECT * FROM " + type.getSimpleName().toLowerCase() + ";";
+        String query = "SELECT * FROM `" + type.getSimpleName().toLowerCase() + "`;";
 
         Connection connection = null;
         PreparedStatement statement = null;
@@ -51,7 +51,7 @@ public class AbstractDAO<T> {
     }
 
     public T findById(int id) {
-        String query = "SELECT * FROM " + type.getSimpleName().toLowerCase() + " WHERE " + getFieldNames().get(0) + " = " + id;
+        String query = "SELECT * FROM `" + type.getSimpleName().toLowerCase() + "` WHERE " + getFieldNames().get(0) + " = " + id;
 
         Connection connection = null;
         PreparedStatement statement = null;
@@ -70,7 +70,7 @@ public class AbstractDAO<T> {
                 return null;
             }
         } catch (SQLException e) {
-            //
+
         } finally {
             ConnectionFactory.close(resultSet);
             ConnectionFactory.close(statement);
@@ -96,19 +96,8 @@ public class AbstractDAO<T> {
 
                 list.add(instance);
             }
-        } catch (InstantiationException e) {
-            e.printStackTrace();
-        } catch (IllegalAccessException e) {
-            e.printStackTrace();
-        } catch (SecurityException e) {
-            e.printStackTrace();
-        } catch (IllegalArgumentException e) {
-            e.printStackTrace();
-        } catch (InvocationTargetException e) {
-            e.printStackTrace();
-        } catch (SQLException e) {
-            e.printStackTrace();
-        } catch (IntrospectionException e) {
+        } catch (InstantiationException | IllegalAccessException | IllegalArgumentException |
+                SecurityException | InvocationTargetException | SQLException | IntrospectionException e) {
             e.printStackTrace();
         }
 
@@ -152,8 +141,8 @@ public class AbstractDAO<T> {
         return values;
     }
 
-    public T insert(T t) {
-        StringBuilder sb = new StringBuilder("INSERT INTO " + type.getSimpleName().toLowerCase() + " (");
+    public T insert(T t) throws SQLException {
+        StringBuilder sb = new StringBuilder("INSERT INTO `" + type.getSimpleName().toLowerCase() + "` (");
 
         List<String> fieldNames = getFieldNames();
 
@@ -180,8 +169,8 @@ public class AbstractDAO<T> {
         return t;
     }
 
-    public T update(T t, int id) {
-        StringBuilder sb = new StringBuilder("UPDATE " + type.getSimpleName().toLowerCase() + " SET ");
+    public T update(T t, int id) throws SQLException {
+        StringBuilder sb = new StringBuilder("UPDATE `" + type.getSimpleName().toLowerCase() + "` SET ");
 
         List<String> fieldNames = getFieldNames();
         List<String> fieldValues = getValuesAsString(t);
@@ -201,33 +190,29 @@ public class AbstractDAO<T> {
         return t;
     }
 
-    public void delete(int id) {
+    public void delete(int id) throws SQLException {
         List<String> fieldNames = getFieldNames();
 
-        String query = "DELETE FROM " + type.getSimpleName().toLowerCase() + " WHERE " + fieldNames.get(0) + " = " + id;
+        String query = "DELETE FROM `" + type.getSimpleName().toLowerCase() + "` WHERE " + fieldNames.get(0) + " = " + id;
 
         executeUpdate(query);
     }
 
-    public void deleteAll() {
-        String query = "DELETE FROM " + type.getSimpleName().toLowerCase() + ";";
+    public void deleteAll() throws SQLException {
+        String query = "DELETE FROM `" + type.getSimpleName().toLowerCase() + "`;";
 
         executeUpdate(query);
     }
 
-    private void executeUpdate(String sql) {
+    private void executeUpdate(String sql) throws SQLException {
         Connection connection = null;
         Statement statement = null;
 
-        try {
-            connection = ConnectionFactory.getConnection();
-            statement = connection.createStatement();
-            statement.executeUpdate(sql);
-        } catch (SQLException e) {
-            e.printStackTrace();
-        } finally {
-            ConnectionFactory.close(connection);
-            ConnectionFactory.close(statement);
-        }
+        connection = ConnectionFactory.getConnection();
+        statement = connection.createStatement();
+        statement.executeUpdate(sql);
+
+        ConnectionFactory.close(connection);
+        ConnectionFactory.close(statement);
     }
 }

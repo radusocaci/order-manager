@@ -13,11 +13,9 @@ public class Product {
         this.id = id;
         this.name = name;
         this.price = price;
-        this.stockId = stockId;
     }
 
     public Product(String name, int price) {
-        this.stockId = stockId;
         this.name = name;
         this.price = price;
     }
@@ -56,7 +54,6 @@ public class Product {
 
     @Override
     public String toString() {
-        return name + ' ' +
-                price + '\n';
+        return name + "\t\t";
     }
 }
