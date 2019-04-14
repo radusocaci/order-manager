@@ -4,6 +4,11 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionListener;
 
+/**
+ * Defines the customer related part of the GUI
+ *
+ * @author Socaci Radu Andrei
+ */
 public class CustomerPanel extends JPanel {
     private JTable customerTable;
 
@@ -23,6 +28,9 @@ public class CustomerPanel extends JPanel {
     private JLabel emailLabel;
     private JLabel addressLabel;
 
+    /**
+     * Creates the look and feel of the panel and instantiates all components
+     */
     public CustomerPanel() {
         customerTable = new JTable();
 
@@ -76,6 +84,12 @@ public class CustomerPanel extends JPanel {
         add(southPanel, BorderLayout.SOUTH);
     }
 
+    /**
+     * Setter method for the customer table (JTable).
+     * Also refreshes the view to display the new table.
+     *
+     * @param customerTable customer table
+     */
     public void setCustomerTable(JTable customerTable) {
         this.customerTable = customerTable;
         JScrollPane scrollPane = new JScrollPane(customerTable);
@@ -86,26 +100,54 @@ public class CustomerPanel extends JPanel {
         repaint();
     }
 
+    /**
+     * Returns the content of the id text field as a string
+     *
+     * @return id as string
+     */
     public String getIdTextField() {
         return idTextField.getText();
     }
 
+    /**
+     * Returns the content of the last name text field as a string
+     *
+     * @return last name as string
+     */
     public String getLastNameTextField() {
         return lastNameTextField.getText();
     }
 
+    /**
+     * Returns the content of the first name text field as a string
+     *
+     * @return first name as string
+     */
     public String getFirstNameTextField() {
         return firstNameTextField.getText();
     }
 
+    /**
+     * Returns the content of the email text field as a string
+     *
+     * @return email as string
+     */
     public String getEmailTextField() {
         return emailTextField.getText();
     }
 
+    /**
+     * Returns the content of the address text field as a string
+     *
+     * @return address as string
+     */
     public String getAddressTextField() {
         return addressTextField.getText();
     }
 
+    /**
+     * Resets all text fields
+     */
     public void resetDataPanel() {
         idTextField.setText("");
         lastNameTextField.setText("");
@@ -114,14 +156,29 @@ public class CustomerPanel extends JPanel {
         addressTextField.setText("");
     }
 
+    /**
+     * Adds action listener for the insert button
+     *
+     * @param listener insert action listener
+     */
     public void setAddCustomerListener(ActionListener listener) {
         addCustomer.addActionListener(listener);
     }
 
+    /**
+     * Adds action listener for the update button
+     *
+     * @param listener update action listener
+     */
     public void setUpdateCustomerListener(ActionListener listener) {
         updateCustomer.addActionListener(listener);
     }
 
+    /**
+     * Adds action listener for the delete button
+     *
+     * @param listener delete action listener
+     */
     public void setDeleteCustomerListener(ActionListener listener) {
         deleteCustomer.addActionListener(listener);
     }

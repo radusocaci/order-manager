@@ -14,6 +14,11 @@ import java.util.NoSuchElementException;
 import java.util.concurrent.atomic.AtomicInteger;
 import java.util.stream.Collectors;
 
+/**
+ * Provides interaction with the product table of the database
+ *
+ * @author Socaci Radu Andrei
+ */
 public class ProductBLL {
     private static final AtomicInteger idGenerator = new AtomicInteger(1);
     private ProductDAO productDAO;
@@ -28,6 +33,15 @@ public class ProductBLL {
         this.orderDAO = new OrderDAO();
     }
 
+    /**
+     * Inserts a product into the database
+     *
+     * @param product product
+     * @param stock   stock
+     * @return index of newly inserted product
+     * @throws SQLException             throws for bad insertion
+     * @throws IllegalArgumentException thrown for bad price/stock
+     */
     public int insert(Product product, int stock) throws SQLException, IllegalArgumentException {
         int stockId = 0;
 
@@ -51,12 +65,28 @@ public class ProductBLL {
         }
     }
 
+    /**
+     * Updates a product in the database
+     *
+     * @param product product
+     * @return index of newly updated product
+     * @throws NoSuchElementException   throws if product to update is not in the database
+     * @throws SQLException             throws for bad update
+     * @throws IllegalArgumentException thrown for bad price
+     */
     public int update(Product product) throws NoSuchElementException, SQLException, IllegalArgumentException {
         get(product.getId());
         validator.validate(product);
         return productDAO.update(product, product.getId()).getId();
     }
 
+    /**
+     * Deletes a product from the database
+     *
+     * @param id product id to delete
+     * @throws NoSuchElementException throws if product to delete is not in the database
+     * @throws SQLException           throws for bad delete
+     */
     public void delete(int id) throws NoSuchElementException, SQLException {
         List<Order> toDelete = orderDAO.findAll().stream().filter((order) -> (order.getIdProduct() == id)).collect(Collectors.toList());
         for (Order order : toDelete) {
@@ -68,6 +98,11 @@ public class ProductBLL {
         productDAO.delete(id);
     }
 
+    /**
+     * Deletes all products from the database
+     *
+     * @throws SQLException throws for bad delete
+     */
     public void deleteAll() throws SQLException {
         stockBLL.deleteAll();
         productDAO.deleteAll();
@@ -76,10 +111,22 @@ public class ProductBLL {
         stockBLL.init();
     }
 
+    /**
+     * Retrieves all products in the database
+     *
+     * @return product list
+     */
     public List<Product> getAll() {
         return productDAO.findAll();
     }
 
+    /**
+     * Retrieves product with given id from the database
+     *
+     * @param id id
+     * @return product
+     * @throws NoSuchElementException throws if product to retrieve is not in the database
+     */
     public Product get(int id) throws NoSuchElementException {
         Product product = productDAO.findById(id);
 

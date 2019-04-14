@@ -4,6 +4,11 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionListener;
 
+/**
+ * Defines the order related part of the GUI
+ *
+ * @author Socaci Radu Andrei
+ */
 public class OrderPanel extends JPanel {
     private JButton order;
     private JButton generateBill;
@@ -16,6 +21,9 @@ public class OrderPanel extends JPanel {
     private JLabel productIdLabel;
     private JLabel nrItemsLabel;
 
+    /**
+     * Creates the look and feel of the panel and instantiates all components
+     */
     public OrderPanel() {
         order = new JButton("Place Order");
         generateBill = new JButton("Generate Bills");
@@ -52,22 +60,47 @@ public class OrderPanel extends JPanel {
         add(centerPanel);
     }
 
+    /**
+     * Returns the content of the customer id text field as a string
+     *
+     * @return customer id as string
+     */
     public String getCustomerIdTextField() {
         return customerIdTextField.getText();
     }
 
+    /**
+     * Returns the content of the product id text field as a string
+     *
+     * @return product id as string
+     */
     public String getProductIdTextField() {
         return productIdTextField.getText();
     }
 
-    public String getQuentityTextField() {
+    /**
+     * Returns the content of the quantity text field as a string
+     *
+     * @return quantity as string
+     */
+    public String getQuantityTextField() {
         return nrItemsTextField.getText();
     }
 
+    /**
+     * Adds action listener for the order button
+     *
+     * @param listener order action listener
+     */
     public void setOrderListener(ActionListener listener) {
         order.addActionListener(listener);
     }
 
+    /**
+     * Adds action listener for the bill button
+     *
+     * @param listener bill action listener
+     */
     public void setGenerateBillListener(ActionListener listener) {
         generateBill.addActionListener(listener);
     }

@@ -11,10 +11,20 @@ import java.awt.event.ActionListener;
 import java.sql.SQLException;
 import java.util.NoSuchElementException;
 
+/**
+ * Defines all functionality for the user interaction with the product panel
+ *
+ * @author Socaci Radu Andrei
+ */
 public class ProductController {
     private View view;
     private ProductBLL productBLL;
 
+    /**
+     * Instantiates all components and adds listener for the product panel buttons
+     *
+     * @param view view reference
+     */
     public ProductController(View view) {
         this.view = view;
         this.productBLL = new ProductBLL();
@@ -24,14 +34,28 @@ public class ProductController {
         view.getProductPanel().setDeleteProductListener(new DeleteProductListener());
     }
 
+    /**
+     * Product BLL getter. Does not allow multiple definitions
+     *
+     * @return productBLL
+     */
     public ProductBLL getProductBLL() {
         return productBLL;
     }
 
+    /**
+     * Stock BLL getter. Does not allow multiple definitions
+     *
+     * @return stockBLL
+     */
     public StockBLL getStockBLL() {
         return productBLL.getStockBLL();
     }
 
+    /**
+     * When the add product button is pressed, a new product is inserted in the database.
+     * Provides all input checking needed and handles all possible exception cases.
+     */
     private class AddProductListener implements ActionListener {
         @Override
         public void actionPerformed(ActionEvent e) {
@@ -54,6 +78,10 @@ public class ProductController {
         }
     }
 
+    /**
+     * When the update product button is pressed, the product with the given id is updated in the database.
+     * Provides all input checking needed and handles all possible exception cases.
+     */
     private class UpdateProductListener implements ActionListener {
         @Override
         public void actionPerformed(ActionEvent e) {
@@ -85,6 +113,10 @@ public class ProductController {
         }
     }
 
+    /**
+     * When the delete product button is pressed, the product with the given id is deleted from the database.
+     * Provides all input checking needed and handles all possible exception cases.
+     */
     private class DeleteProductListener implements ActionListener {
         @Override
         public void actionPerformed(ActionEvent e) {

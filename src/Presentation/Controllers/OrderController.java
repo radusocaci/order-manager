@@ -22,6 +22,11 @@ import java.util.List;
 import java.util.NoSuchElementException;
 import java.util.stream.Collectors;
 
+/**
+ * Defines all functionality for the user interaction with the order panel
+ *
+ * @author Socaci Radu Andrei
+ */
 public class OrderController {
     private View view;
     private OrderDAO orderDAO;
@@ -29,6 +34,14 @@ public class OrderController {
     private ProductBLL productBLL;
     private StockBLL stockBLL;
 
+    /**
+     * Instantiates all components and adds listener for the order panel buttons
+     *
+     * @param view        view reference
+     * @param customerBLL customerBLL reference
+     * @param productBLL  productBLL reference
+     * @param stockBLL    stockBLL reference
+     */
     public OrderController(View view, CustomerBLL customerBLL, ProductBLL productBLL, StockBLL stockBLL) {
         this.orderDAO = new OrderDAO();
 
@@ -55,12 +68,16 @@ public class OrderController {
         view.getOrderPanel().setGenerateBillListener(new BillListener());
     }
 
+    /**
+     * When the order button is pressed, a new order is created with the specified information.
+     * Provides all input checking needed and handles all possible exception cases.
+     */
     private class OrderListener implements ActionListener {
         @Override
         public void actionPerformed(ActionEvent e) {
             OrderPanel orderPanel = view.getOrderPanel();
 
-            if (orderPanel.getCustomerIdTextField().isEmpty() || orderPanel.getProductIdTextField().isEmpty() || orderPanel.getQuentityTextField().isEmpty()) {
+            if (orderPanel.getCustomerIdTextField().isEmpty() || orderPanel.getProductIdTextField().isEmpty() || orderPanel.getQuantityTextField().isEmpty()) {
                 view.showError("Need to specify customer, product and quantity!");
                 return;
             }
@@ -77,20 +94,24 @@ public class OrderController {
                 return;
             }
 
-            if ((stock = stockBLL.get(product.getStockId())).getStock() < Integer.parseInt(orderPanel.getQuentityTextField())) {
+            if ((stock = stockBLL.get(product.getStockId())).getStock() < Integer.parseInt(orderPanel.getQuantityTextField())) {
                 view.showError("Out of stock!");
                 return;
             }
 
             try {
-                orderDAO.insert(new Order(product.getId(), customer.getId(), Integer.parseInt(orderPanel.getQuentityTextField())));
-                stockBLL.update(new Stock(product.getStockId(), stock.getStock() - Integer.parseInt(orderPanel.getQuentityTextField())));
+                orderDAO.insert(new Order(product.getId(), customer.getId(), Integer.parseInt(orderPanel.getQuantityTextField())));
+                stockBLL.update(new Stock(product.getStockId(), stock.getStock() - Integer.parseInt(orderPanel.getQuantityTextField())));
             } catch (SQLException ex) {
                 view.showError(ex.getMessage());
             }
         }
     }
 
+    /**
+     * When the generate bills button is pressed, a bill is generated for each client in the Bills folder.
+     * Provides all input checking needed and handles all possible exception cases.
+     */
     private class BillListener implements ActionListener {
         private int totalPaid = 0;
 
@@ -126,6 +147,12 @@ public class OrderController {
             }
         }
 
+        /**
+         * Given an order object, it returns a print-ready string representation of the order
+         *
+         * @param order order object
+         * @return string representation of order
+         */
         private String generateBillOrder(Order order) {
             StringBuilder stringBuilder = new StringBuilder("Product Name: ");
             Product product = productBLL.get(order.getIdProduct());

@@ -10,10 +10,20 @@ import java.awt.event.ActionListener;
 import java.sql.SQLException;
 import java.util.NoSuchElementException;
 
+/**
+ * Defines all functionality for the user interaction with the customer panel
+ *
+ * @author Socaci Radu Andrei
+ */
 public class CustomerController {
     private View view;
     private CustomerBLL customerBLL;
 
+    /**
+     * Instantiates all components and adds listener for the customer panel buttons
+     *
+     * @param view view reference
+     */
     public CustomerController(View view) {
         this.view = view;
         this.customerBLL = new CustomerBLL();
@@ -23,10 +33,19 @@ public class CustomerController {
         view.getCustomerPanel().setDeleteCustomerListener(new DeleteCustomerListener());
     }
 
+    /**
+     * Customer BLL getter. Does not allow multiple definitions
+     *
+     * @return customerBLL
+     */
     public CustomerBLL getCustomerBLL() {
         return customerBLL;
     }
 
+    /**
+     * When the add customer button is pressed, a new customer is inserted in the database.
+     * Provides all input checking needed and handles all possible exception cases.
+     */
     private class AddCustomerListener implements ActionListener {
         @Override
         public void actionPerformed(ActionEvent e) {
@@ -51,6 +70,10 @@ public class CustomerController {
         }
     }
 
+    /**
+     * When the update customer button is pressed, the customer with the given id is updated in the database.
+     * Provides all input checking needed and handles all possible exception cases.
+     */
     private class UpdateCustomerListener implements ActionListener {
         @Override
         public void actionPerformed(ActionEvent e) {
@@ -82,6 +105,10 @@ public class CustomerController {
         }
     }
 
+    /**
+     * When the delete customer button is pressed, the customer with given id is deleted from the database.
+     * Provides all input checking needed and handles all possible exception cases.
+     */
     private class DeleteCustomerListener implements ActionListener {
         @Override
         public void actionPerformed(ActionEvent e) {

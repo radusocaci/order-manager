@@ -4,6 +4,11 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionListener;
 
+/**
+ * Defines the product related part of the GUI
+ *
+ * @author Socaci Radu Andrei
+ */
 public class ProductPanel extends JPanel {
     private JTable productTable;
 
@@ -21,6 +26,9 @@ public class ProductPanel extends JPanel {
     private JLabel priceLabel;
     private JLabel stockLabel;
 
+    /**
+     * Creates the look and feel of the panel and instantiates all components
+     */
     public ProductPanel() {
         productTable = new JTable();
 
@@ -69,6 +77,12 @@ public class ProductPanel extends JPanel {
         add(southPanel, BorderLayout.SOUTH);
     }
 
+    /**
+     * Setter method for the product table (JTable).
+     * Also refreshes the view to display the new table.
+     *
+     * @param productTable product table
+     */
     public void setProductTable(JTable productTable) {
         this.productTable = productTable;
         JScrollPane scrollPane = new JScrollPane(productTable);
@@ -79,22 +93,45 @@ public class ProductPanel extends JPanel {
         repaint();
     }
 
+    /**
+     * Returns the content of the id text field as a string
+     *
+     * @return id as string
+     */
     public String getIdTextField() {
         return idTextField.getText();
     }
 
+    /**
+     * Returns the content of the name text field as a string
+     *
+     * @return name as string
+     */
     public String getNameTextField() {
         return nameTextField.getText();
     }
 
+    /**
+     * Returns the content of the price text field as a string
+     *
+     * @return price as string
+     */
     public String getPriceTextField() {
         return priceTextField.getText();
     }
 
+    /**
+     * Returns the content of the stock text field as a string
+     *
+     * @return stock as string
+     */
     public String getStockTextField() {
         return stockTextField.getText();
     }
 
+    /**
+     * Resets all text fields
+     */
     public void resetDataPanel() {
         idTextField.setText("");
         nameTextField.setText("");
@@ -102,14 +139,29 @@ public class ProductPanel extends JPanel {
         stockTextField.setText("");
     }
 
+    /**
+     * Adds action listener for the insert button
+     *
+     * @param listener insert action listener
+     */
     public void setAddProductListener(ActionListener listener) {
         addProduct.addActionListener(listener);
     }
 
+    /**
+     * Adds action listener for the update button
+     *
+     * @param listener update action listener
+     */
     public void setUpdateProductListener(ActionListener listener) {
         updateProduct.addActionListener(listener);
     }
 
+    /**
+     * Adds action listener for the delete button
+     *
+     * @param listener delete action listener
+     */
     public void setDeleteProductListener(ActionListener listener) {
         deleteProduct.addActionListener(listener);
     }
