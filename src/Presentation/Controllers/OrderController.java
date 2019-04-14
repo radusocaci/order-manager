@@ -59,7 +59,13 @@ public class OrderController {
             view.showError(e.getMessage());
         }
 
-        File[] filesInFolder = new File("Bills").listFiles();
+        File directory = new File("bills");
+
+        if (!directory.exists()) {
+            directory.mkdir();
+        }
+
+        File[] filesInFolder = directory.listFiles();
         if (filesInFolder != null) {
             Arrays.stream(filesInFolder).forEach(File::delete);
         }
@@ -127,7 +133,7 @@ public class OrderController {
                 customer = customerBLL.get(id);
                 orders = orderDAO.findAll().stream().filter((order) -> (order.getIdCustomer() == id)).collect(Collectors.toList());
 
-                File billFile = new File("Bills/BillNo" + id + ".txt");
+                File billFile = new File("bills/BillNo" + id + ".txt");
 
                 try {
                     fileWriter = new FileWriter(billFile, false);
