@@ -2,32 +2,39 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0353cebe-676f-4596-a3e8-6e2a908ce939" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Business_Logic/CustomerBLL.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Business_Logic/CustomerBLL.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Business_Logic/ProductBLL.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Business_Logic/ProductBLL.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Business_Logic/StockBLL.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Business_Logic/StockBLL.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Business_Logic/validators/EmailValidator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Business_Logic/validators/EmailValidator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Business_Logic/validators/PriceValidator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Business_Logic/validators/PriceValidator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Business_Logic/validators/StockValidator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Business_Logic/validators/StockValidator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Business_Logic/validators/Validator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Business_Logic/validators/Validator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Data_Access/Connection/ConnectionFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Data_Access/Connection/ConnectionFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Data_Access/DAO/AbstractDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Data_Access/DAO/AbstractDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Data_Access/DAO/CustomerDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Data_Access/DAO/CustomerDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Data_Access/DAO/OrderDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Data_Access/DAO/OrderDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Data_Access/DAO/ProductDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Data_Access/DAO/ProductDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Data_Access/DAO/StockDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Data_Access/DAO/StockDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Model/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/Customer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Model/Order.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/Order.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Model/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/Product.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Model/Stock.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/Stock.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Presentation/Controllers/CustomerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Presentation/Controllers/CustomerController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Presentation/Controllers/OrderController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Presentation/Controllers/OrderController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Presentation/Controllers/ProductController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Presentation/Controllers/ProductController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Presentation/Views/CustomerPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Presentation/Views/CustomerPanel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Presentation/Views/OrderPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Presentation/Views/OrderPanel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Presentation/Views/ProductPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Presentation/Views/ProductPanel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Presentation/Views/View.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Presentation/Views/View.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Order_Manager/Business_Logic/CustomerBLL.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Order_Manager/Business_Logic/CustomerBLL.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Order_Manager/Business_Logic/ProductBLL.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Order_Manager/Business_Logic/ProductBLL.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Order_Manager/Business_Logic/StockBLL.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Order_Manager/Business_Logic/StockBLL.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Order_Manager/Business_Logic/validators/EmailValidator.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Order_Manager/Business_Logic/validators/EmailValidator.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Order_Manager/Business_Logic/validators/PriceValidator.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Order_Manager/Business_Logic/validators/PriceValidator.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Order_Manager/Business_Logic/validators/StockValidator.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Order_Manager/Business_Logic/validators/StockValidator.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Order_Manager/Data_Access/Connection/ConnectionFactory$SingletonHelper.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Order_Manager/Data_Access/Connection/ConnectionFactory$SingletonHelper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Order_Manager/Data_Access/Connection/ConnectionFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Order_Manager/Data_Access/Connection/ConnectionFactory.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Order_Manager/Data_Access/DAO/AbstractDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Order_Manager/Data_Access/DAO/AbstractDAO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Order_Manager/Data_Access/DAO/CustomerDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Order_Manager/Data_Access/DAO/CustomerDAO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Order_Manager/Data_Access/DAO/OrderDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Order_Manager/Data_Access/DAO/OrderDAO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Order_Manager/Data_Access/DAO/ProductDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Order_Manager/Data_Access/DAO/ProductDAO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Order_Manager/Data_Access/DAO/StockDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Order_Manager/Data_Access/DAO/StockDAO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Order_Manager/Model/Customer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Order_Manager/Model/Customer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Order_Manager/Model/Order.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Order_Manager/Model/Order.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Order_Manager/Model/Product.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Order_Manager/Model/Product.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Order_Manager/Model/Stock.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Order_Manager/Model/Stock.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Order_Manager/Presentation/Controllers/CustomerController$AddCustomerListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Order_Manager/Presentation/Controllers/CustomerController$AddCustomerListener.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Order_Manager/Presentation/Controllers/CustomerController$DeleteCustomerListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Order_Manager/Presentation/Controllers/CustomerController$DeleteCustomerListener.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Order_Manager/Presentation/Controllers/CustomerController$UpdateCustomerListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Order_Manager/Presentation/Controllers/CustomerController$UpdateCustomerListener.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Order_Manager/Presentation/Controllers/CustomerController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Order_Manager/Presentation/Controllers/CustomerController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Order_Manager/Presentation/Controllers/OrderController$BillListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Order_Manager/Presentation/Controllers/OrderController$BillListener.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Order_Manager/Presentation/Controllers/OrderController$OrderListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Order_Manager/Presentation/Controllers/OrderController$OrderListener.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Order_Manager/Presentation/Controllers/OrderController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Order_Manager/Presentation/Controllers/OrderController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Order_Manager/Presentation/Controllers/ProductController$AddProductListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Order_Manager/Presentation/Controllers/ProductController$AddProductListener.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Order_Manager/Presentation/Controllers/ProductController$DeleteProductListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Order_Manager/Presentation/Controllers/ProductController$DeleteProductListener.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Order_Manager/Presentation/Controllers/ProductController$UpdateProductListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Order_Manager/Presentation/Controllers/ProductController$UpdateProductListener.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Order_Manager/Presentation/Controllers/ProductController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Order_Manager/Presentation/Controllers/ProductController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Order_Manager/Presentation/Views/CustomerPanel.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Order_Manager/Presentation/Views/CustomerPanel.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Order_Manager/Presentation/Views/OrderPanel.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Order_Manager/Presentation/Views/OrderPanel.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Order_Manager/Presentation/Views/ProductPanel.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Order_Manager/Presentation/Views/ProductPanel.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Order_Manager/Presentation/Views/View.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Order_Manager/Presentation/Views/View.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -152,11 +159,6 @@
               <item name="Order_Manager" type="b2602c69:ProjectViewProjectNode" />
               <item name="pt2019_30421_socaci_radu_assignment_3" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="Order_Manager" type="b2602c69:ProjectViewProjectNode" />
-              <item name="pt2019_30421_socaci_radu_assignment_3" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -231,7 +233,7 @@
       <workItem from="1555140669177" duration="20751000" />
       <workItem from="1555181279902" duration="6024000" />
       <workItem from="1555192001956" duration="5552000" />
-      <workItem from="1555229981452" duration="5198000" />
+      <workItem from="1555229981452" duration="5401000" />
     </task>
     <task id="LOCAL-00001" summary="Added connection">
       <created>1554886265265</created>
@@ -261,23 +263,30 @@
       <option name="project" value="LOCAL" />
       <updated>1555187142704</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Added JavaDoc">
+      <created>1555235478015</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1555235478015</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="101436000" />
+    <option name="totallyTimeSpent" value="101639000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2196162" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2196162" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="UI Designer" order="3" />
       <window_info id="Favorites" order="4" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32936078" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32936078" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32936078" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3997833" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -297,7 +306,7 @@
       <window_info anchor="right" id="Codota" order="4" />
       <window_info anchor="right" id="Maven" order="5" weight="0.32995737" />
       <window_info anchor="right" id="Palette&#9;" order="6" />
-      <window_info active="true" anchor="right" id="Database" order="7" visible="true" weight="0.16257995" />
+      <window_info anchor="right" id="Database" order="7" weight="0.16257995" />
     </layout>
   </component>
   <component name="VcsManagerConfiguration">
@@ -306,7 +315,8 @@
     <MESSAGE value="Added connection" />
     <MESSAGE value="Update" />
     <MESSAGE value="Fully Working App" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fully Working App" />
+    <MESSAGE value="Added JavaDoc" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added JavaDoc" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -465,7 +475,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Bills/BillNo1.txt" />
+    <entry file="file://$PROJECT_DIR$/bills/BillNo1.txt" />
     <entry file="das://d3dccde0-a2bc-4cd3-9fea-5cd821bb3e6d/schema/warehouse/table/order">
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
@@ -619,13 +629,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Business_Logic/CustomerBLL.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="20" lean-forward="true" selection-start-line="12" selection-start-column="20" selection-end-line="12" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Data_Access/Connection/ConnectionFactory.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="714">
@@ -767,6 +770,16 @@
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
           <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Business_Logic/CustomerBLL.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="20" column="13" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
