@@ -1,0 +1,51 @@
+create table customer
+(
+    id        int auto_increment
+        primary key,
+    lastName  varchar(10)  not null,
+    firstName varchar(20)  not null,
+    email     varchar(50)  not null,
+    address   varchar(200) not null,
+    constraint customer_address_uindex
+        unique (address),
+    constraint customer_email_uindex
+        unique (email)
+);
+
+create table stock
+(
+    id    int auto_increment
+        primary key,
+    stock int not null
+);
+
+create table product
+(
+    id      int auto_increment
+        primary key,
+    name    varchar(20) not null,
+    price   int         not null,
+    stockId int         not null,
+    constraint product_name_uindex
+        unique (name),
+    constraint product_stock_id_fk
+        unique (stockId),
+    constraint product_stock_id_fk
+        foreign key (stockId) references stock (id)
+            on delete cascade
+);
+
+create table `order`
+(
+    id         int auto_increment
+        primary key,
+    idCustomer int not null,
+    idProduct  int not null,
+    quantity   int not null,
+    constraint order_customer_id_fk
+        foreign key (idCustomer) references customer (id)
+            on update cascade,
+    constraint order_product_id_fk
+        foreign key (idProduct) references product (id)
+            on update cascade
+);

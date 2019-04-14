@@ -1,40 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0353cebe-676f-4596-a3e8-6e2a908ce939" name="Default Changelist" comment="">
+    <list default="true" id="7a175b75-e93b-44d5-a7d7-a120092aab61" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/d3dccde0-a2bc-4cd3-9fea-5cd821bb3e6d.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/d3dccde0-a2bc-4cd3-9fea-5cd821bb3e6d/storage_v2/_src_/schema/faculty.ZJrrvg.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/d3dccde0-a2bc-4cd3-9fea-5cd821bb3e6d/storage_v2/_src_/schema/mydb.Kl8zAA.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/d3dccde0-a2bc-4cd3-9fea-5cd821bb3e6d/storage_v2/_src_/schema/sakila.oXLGyQ.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/d3dccde0-a2bc-4cd3-9fea-5cd821bb3e6d/storage_v2/_src_/schema/student_db.AoF2wg.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/d3dccde0-a2bc-4cd3-9fea-5cd821bb3e6d/storage_v2/_src_/schema/warehouse.wzrviA.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Order_Manager/Business_Logic/CustomerBLL.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Order_Manager/Business_Logic/CustomerBLL.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Order_Manager/Business_Logic/ProductBLL.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Order_Manager/Business_Logic/ProductBLL.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Order_Manager/Business_Logic/StockBLL.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Order_Manager/Business_Logic/StockBLL.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Order_Manager/Business_Logic/validators/EmailValidator.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Order_Manager/Business_Logic/validators/EmailValidator.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Order_Manager/Business_Logic/validators/PriceValidator.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Order_Manager/Business_Logic/validators/PriceValidator.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Order_Manager/Business_Logic/validators/StockValidator.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Order_Manager/Business_Logic/validators/StockValidator.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Order_Manager/Data_Access/Connection/ConnectionFactory$SingletonHelper.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Order_Manager/Data_Access/Connection/ConnectionFactory$SingletonHelper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Order_Manager/Data_Access/Connection/ConnectionFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Order_Manager/Data_Access/Connection/ConnectionFactory.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Order_Manager/Data_Access/DAO/AbstractDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Order_Manager/Data_Access/DAO/AbstractDAO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Order_Manager/Data_Access/DAO/CustomerDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Order_Manager/Data_Access/DAO/CustomerDAO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Order_Manager/Data_Access/DAO/OrderDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Order_Manager/Data_Access/DAO/OrderDAO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Order_Manager/Data_Access/DAO/ProductDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Order_Manager/Data_Access/DAO/ProductDAO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Order_Manager/Data_Access/DAO/StockDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Order_Manager/Data_Access/DAO/StockDAO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Order_Manager/Model/Customer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Order_Manager/Model/Customer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Order_Manager/Model/Order.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Order_Manager/Model/Order.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Order_Manager/Model/Product.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Order_Manager/Model/Product.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Order_Manager/Model/Stock.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Order_Manager/Model/Stock.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Order_Manager/Presentation/Controllers/CustomerController$AddCustomerListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Order_Manager/Presentation/Controllers/CustomerController$AddCustomerListener.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Order_Manager/Presentation/Controllers/CustomerController$DeleteCustomerListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Order_Manager/Presentation/Controllers/CustomerController$DeleteCustomerListener.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Order_Manager/Presentation/Controllers/CustomerController$UpdateCustomerListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Order_Manager/Presentation/Controllers/CustomerController$UpdateCustomerListener.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Order_Manager/Presentation/Controllers/CustomerController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Order_Manager/Presentation/Controllers/CustomerController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Order_Manager/Presentation/Controllers/OrderController$BillListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Order_Manager/Presentation/Controllers/OrderController$BillListener.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Order_Manager/Presentation/Controllers/OrderController$OrderListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Order_Manager/Presentation/Controllers/OrderController$OrderListener.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Order_Manager/Presentation/Controllers/OrderController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Order_Manager/Presentation/Controllers/OrderController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Order_Manager/Presentation/Controllers/ProductController$AddProductListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Order_Manager/Presentation/Controllers/ProductController$AddProductListener.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Order_Manager/Presentation/Controllers/ProductController$DeleteProductListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Order_Manager/Presentation/Controllers/ProductController$DeleteProductListener.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Order_Manager/Presentation/Controllers/ProductController$UpdateProductListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Order_Manager/Presentation/Controllers/ProductController$UpdateProductListener.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Order_Manager/Presentation/Controllers/ProductController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Order_Manager/Presentation/Controllers/ProductController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Order_Manager/Presentation/Views/CustomerPanel.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Order_Manager/Presentation/Views/CustomerPanel.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Order_Manager/Presentation/Views/OrderPanel.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Order_Manager/Presentation/Views/OrderPanel.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Order_Manager/Presentation/Views/ProductPanel.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Order_Manager/Presentation/Views/ProductPanel.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Order_Manager/Presentation/Views/View.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Order_Manager/Presentation/Views/View.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bills/BillNo1.txt" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -59,88 +40,25 @@
         <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
         <item name="@localhost" type="feb32156:DbDataSourceImpl" />
       </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="@localhost" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="@localhost" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="warehouse: schema" type="76f4a085:MysqlImplModel$Schema" />
-      </path>
     </expand>
     <select />
   </component>
   <component name="DefaultGradleProjectSettings">
-    <option name="isMigrated" value="true" />
+    <option name="testRunner" value="GRADLE" />
+    <option name="delegatedBuild" value="true" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
-  </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="Interface" />
-        <option value="Class" />
-      </list>
-    </option>
+    <leaf />
   </component>
   <component name="Git.Settings">
-    <option name="PREVIOUS_COMMIT_AUTHORS">
-      <list>
-        <option value="Socaci Radu Andrei &lt;radusocaci@gmail.com&gt;" />
-      </list>
-    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$APPLICATION_CONFIG_DIR$/consoles/.datagrid/cell" />
-        <option value="$PROJECT_DIR$/../../java/connection/ConnectionFactory.java" />
-        <option value="$PROJECT_DIR$/src/Data_Access/ConnectionFactory.java" />
-        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/d3dccde0-a2bc-4cd3-9fea-5cd821bb3e6d/console.sql" />
-        <option value="$PROJECT_DIR$/src/Presentation/Table.java" />
-        <option value="$PROJECT_DIR$/src/BS.java" />
-        <option value="$PROJECT_DIR$/src/Presentation/ProductPanel.java" />
-        <option value="$PROJECT_DIR$/src/Presentation/CustomerPanel.java" />
-        <option value="$PROJECT_DIR$/src/Presentation/OrderPanel.java" />
-        <option value="$PROJECT_DIR$/src/Presentation/View.java" />
-        <option value="$PROJECT_DIR$/src/Main.java" />
-        <option value="$PROJECT_DIR$/src/Model/Product.java" />
-        <option value="$PROJECT_DIR$/src/Model/Stock.java" />
-        <option value="$PROJECT_DIR$/src/Model/Order.java" />
-        <option value="$PROJECT_DIR$/src/Model/Customer.java" />
-        <option value="$PROJECT_DIR$/src/Business_Logic/validators/EmailValidator.java" />
-        <option value="$PROJECT_DIR$/src/Business_Logic/validators/StockValidator.java" />
-        <option value="$PROJECT_DIR$/src/Business_Logic/validators/PriceValidator.java" />
-        <option value="$PROJECT_DIR$/src/Business_Logic/validators/Validator.java" />
-        <option value="$PROJECT_DIR$/src/Business_Logic/CustomerBLL.java" />
-        <option value="$PROJECT_DIR$/src/Business_Logic/ProductBLL.java" />
-        <option value="$PROJECT_DIR$/src/Business_Logic/StockBLL.java" />
-        <option value="$PROJECT_DIR$/src/Data_Access/Connection/ConnectionFactory.java" />
-        <option value="$PROJECT_DIR$/src/Data_Access/DAO/AbstractDAO.java" />
-        <option value="$PROJECT_DIR$/src/Data_Access/DAO/CustomerDAO.java" />
-        <option value="$PROJECT_DIR$/src/Data_Access/DAO/OrderDAO.java" />
-        <option value="$PROJECT_DIR$/src/Data_Access/DAO/ProductDAO.java" />
-        <option value="$PROJECT_DIR$/src/Data_Access/DAO/StockDAO.java" />
-        <option value="$PROJECT_DIR$/src/Presentation/Views/CustomerPanel.java" />
-        <option value="$PROJECT_DIR$/src/Presentation/Views/OrderPanel.java" />
-        <option value="$PROJECT_DIR$/src/Presentation/Views/ProductPanel.java" />
-        <option value="$PROJECT_DIR$/src/Presentation/Views/View.java" />
-        <option value="$PROJECT_DIR$/src/Presentation/Controllers/CustomerController.java" />
-        <option value="$PROJECT_DIR$/src/Presentation/Controllers/ProductController.java" />
-        <option value="$PROJECT_DIR$/src/Presentation/Controllers/OrderController.java" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/dd8839e0-efa1-41d5-a53d-81530ccea1c3/console.sql" />
       </list>
     </option>
-  </component>
-  <component name="MavenProjectNavigator">
-    <treeState>
-      <expand />
-      <select />
-    </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-7" />
@@ -152,41 +70,39 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
-              <item name="Order_Manager" type="b2602c69:ProjectViewProjectNode" />
+              <item name="pt2019_30421_socaci_radu_assignment_3" type="b2602c69:ProjectViewProjectNode" />
               <item name="pt2019_30421_socaci_radu_assignment_3" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="pt2019_30421_socaci_radu_assignment_3" type="b2602c69:ProjectViewProjectNode" />
+              <item name="pt2019_30421_socaci_radu_assignment_3" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="DatabaseDriversLRU" value="mysql" />
+    <property name="DatabaseDriversLRU" value="h2&#10;mysql" />
     <property name="Downloaded.Files.Path.Enabled" value="false" />
     <property name="Repository.Attach.Annotations" value="false" />
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="aspect.path.notification.shown" value="true" />
     <property name="database.console.LAST_STATE" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
-  </component>
-  <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\Radu\Desktop\Repos\pt2019_30421_socaci_radu_assignment_3\src\Business_Logic\validators" />
-    </key>
+    <property name="settings.editor.selected.configurable" value="configurable.group.appearance" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -203,7 +119,7 @@
   <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
-      <module name="Order_Manager" />
+      <module name="pt2019_30421_socaci_radu_assignment_3" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -216,570 +132,65 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="0353cebe-676f-4596-a3e8-6e2a908ce939" name="Default Changelist" comment="" />
-      <created>1554794917132</created>
+      <changelist id="7a175b75-e93b-44d5-a7d7-a120092aab61" name="Default Changelist" comment="" />
+      <created>1555236784708</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1554794917132</updated>
-      <workItem from="1554794919914" duration="59000" />
-      <workItem from="1554795000700" duration="6966000" />
-      <workItem from="1554805130488" duration="92000" />
-      <workItem from="1554805279004" duration="1191000" />
-      <workItem from="1554882047326" duration="4102000" />
-      <workItem from="1554886210220" duration="66000" />
-      <workItem from="1554889550304" duration="10590000" />
-      <workItem from="1554999344543" duration="7576000" />
-      <workItem from="1555067605410" duration="33269000" />
-      <workItem from="1555140669177" duration="20751000" />
-      <workItem from="1555181279902" duration="6024000" />
-      <workItem from="1555192001956" duration="5552000" />
-      <workItem from="1555229981452" duration="5401000" />
+      <updated>1555236784708</updated>
+      <workItem from="1555236786127" duration="909000" />
     </task>
-    <task id="LOCAL-00001" summary="Added connection">
-      <created>1554886265265</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1554886265265</updated>
-    </task>
-    <task id="LOCAL-00002" summary="Added connection">
-      <created>1554903902648</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1554903902648</updated>
-    </task>
-    <task id="LOCAL-00003" summary="Update">
-      <created>1555111919920</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1555111919921</updated>
-    </task>
-    <task id="LOCAL-00004" summary="Fully Working App">
-      <created>1555187142704</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1555187142704</updated>
-    </task>
-    <task id="LOCAL-00005" summary="Added JavaDoc">
-      <created>1555235478015</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1555235478015</updated>
-    </task>
-    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="101639000" />
+    <option name="totallyTimeSpent" value="909000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2196162" />
+      <window_info id="Designer" />
+      <window_info id="UI Designer" />
+      <window_info id="Favorites" side_tool="true" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17927383" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Designer" order="2" />
-      <window_info id="UI Designer" order="3" />
-      <window_info id="Favorites" order="4" side_tool="true" />
+      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" />
+      <window_info anchor="bottom" id="Messages" />
+      <window_info anchor="bottom" id="Terminal" />
+      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info anchor="bottom" id="Database Console" weight="0.3289689" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32936078" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32936078" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.3997833" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.3289689" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" />
-      <window_info anchor="bottom" id="Terminal" order="9" />
-      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" weight="0.3289689" />
-      <window_info anchor="bottom" id="Database Console" order="11" weight="0.32827735" />
-      <window_info anchor="bottom" id="Database Changes" order="12" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Messages" order="13" weight="0.32936078" />
-      <window_info anchor="bottom" id="SQL Generator" order="14" weight="0.32936078" />
+      <window_info anchor="right" id="Palette" />
+      <window_info anchor="right" id="Codota" />
+      <window_info anchor="right" id="Maven" />
+      <window_info anchor="right" id="Palette&#9;" />
+      <window_info anchor="right" id="Database" weight="0.15506808" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="right" id="Codota" order="4" />
-      <window_info anchor="right" id="Maven" order="5" weight="0.32995737" />
-      <window_info anchor="right" id="Palette&#9;" order="6" />
-      <window_info anchor="right" id="Database" order="7" weight="0.16257995" />
     </layout>
   </component>
-  <component name="VcsManagerConfiguration">
-    <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="Added connection" />
-    <MESSAGE value="Update" />
-    <MESSAGE value="Fully Working App" />
-    <MESSAGE value="Added JavaDoc" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added JavaDoc" />
-    <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
-    <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
-    <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
-  </component>
   <component name="editorHistoryManager">
-    <entry file="das://d3dccde0-a2bc-4cd3-9fea-5cd821bb3e6d/schema/faculty/table/link" />
-    <entry file="das://d3dccde0-a2bc-4cd3-9fea-5cd821bb3e6d/schema/faculty/table/student" />
-    <entry file="das://d3dccde0-a2bc-4cd3-9fea-5cd821bb3e6d/schema/faculty/table/teacher" />
-    <entry file="file://$USER_HOME$/AppData/Local/Temp/7zOC6324670/Student.java" />
-    <entry file="das://d3dccde0-a2bc-4cd3-9fea-5cd821bb3e6d/schema/warehouse/table/order/index/order_customer">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="13" selection-start-line="1" selection-start-column="13" selection-end-line="1" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../java/start/ReflectionExample.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="57" selection-start-line="13" selection-start-column="57" selection-end-line="13" selection-end-column="57" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../java/connection/ConnectionFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="26" column="33" lean-forward="true" selection-end-line="79" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../java/start/Start.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="27" column="52" lean-forward="true" selection-start-line="27" selection-start-column="52" selection-end-line="27" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2040" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../java/dao/StudentDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="42" selection-start-line="4" selection-start-column="42" selection-end-line="4" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/d3dccde0-a2bc-4cd3-9fea-5cd821bb3e6d/console.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="32" lean-forward="true" selection-start-line="10" selection-start-column="32" selection-end-line="10" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../java/bll/validators/Validator.java">
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/21eba06f-fb34-4530-ac35-1ae634d61132/console.sql">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/../../java/dao/AbstractDAO.java">
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/dd8839e0-efa1-41d5-a53d-81530ccea1c3/console.sql">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="51" column="4" lean-forward="true" selection-start-line="51" selection-start-column="4" selection-end-line="71" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../java/bll/StudentBLL.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="33" column="45" lean-forward="true" selection-start-line="33" selection-start-column="45" selection-end-line="33" selection-end-column="93" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Presentation/Table.java" />
-    <entry file="file://$PROJECT_DIR$/src/BS.java" />
-    <entry file="uml://MODULES/mdl-Order_Manager">
-      <provider selected="true" editor-type-id="UmlEditorProvider">
-        <state>
-          <ID>MODULES</ID>
-          <OriginalElement>mdl-Order_Manager</OriginalElement>
-          <nodes>
-            <node x="" y="">mdl-Order_Manager</node>
-          </nodes>
-          <notes />
-          <edges />
-          <settings layout="Hierarchic Group" zoom="1.0" x="78.0" y="10.0" />
-          <SelectedNodes />
-          <Categories />
-          <SCOPE>All</SCOPE>
-        </state>
-      </provider>
-    </entry>
-    <entry file="uml://JAVA/Presentation">
-      <provider selected="true" editor-type-id="UmlEditorProvider">
-        <state>
-          <ID>JAVA</ID>
-          <OriginalElement>Presentation</OriginalElement>
-          <nodes>
-            <node x="" y="">Presentation.Controllers</node>
-            <node x="" y="">Presentation.Views</node>
-            <node x="" y="">Data_Access</node>
-          </nodes>
-          <notes />
-          <edges />
-          <settings layout="Hierarchic Group" zoom="1.0" x="82.0" y="50.0" />
-          <SelectedNodes />
-          <Categories />
-          <SCOPE>All</SCOPE>
-          <VISIBILITY>private</VISIBILITY>
-        </state>
-      </provider>
-    </entry>
-    <entry file="uml://JAVA/Main">
-      <provider selected="true" editor-type-id="UmlEditorProvider">
-        <state>
-          <ID>JAVA</ID>
-          <OriginalElement>Main</OriginalElement>
-          <nodes />
-          <notes />
-          <edges />
-          <settings layout="Hierarchic Group" zoom="1.0" x="74.0" y="25.0" />
-          <SelectedNodes />
-          <Categories>
-            <Category>Fields</Category>
-            <Category>Methods</Category>
-          </Categories>
-          <SCOPE>All</SCOPE>
-          <VISIBILITY>private</VISIBILITY>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../pt2019_30421_socaci_radu_assignment_2/Assignment 2 - Queue Simulation/src/View/View.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1784">
-          <caret line="181" column="7" lean-forward="true" selection-start-line="181" selection-start-column="7" selection-end-line="181" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://d3dccde0-a2bc-4cd3-9fea-5cd821bb3e6d/schema/warehouse/table/customer">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://d3dccde0-a2bc-4cd3-9fea-5cd821bb3e6d/schema/warehouse/table/product">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bills/BillNo1.txt" />
-    <entry file="das://d3dccde0-a2bc-4cd3-9fea-5cd821bb3e6d/schema/warehouse/table/order">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
+        <state relative-caret-position="256">
+          <caret line="22" column="1" lean-forward="true" selection-start-line="22" selection-start-column="1" selection-end-line="22" selection-end-column="1" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" selection-start-line="13" selection-end-line="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../java/model/Student.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="17" selection-start-line="14" selection-start-column="17" selection-end-line="14" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Model/Product.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1785">
-          <caret line="105" lean-forward="true" selection-start-line="105" selection-end-line="105" />
-          <folding>
-            <element signature="e#860#861#0" expanded="true" />
-            <element signature="e#885#886#0" expanded="true" />
-            <element signature="e#962#963#0" expanded="true" />
-            <element signature="e#990#991#0" expanded="true" />
-            <element signature="e#977#978#0" expanded="true" />
-            <element signature="e#1007#1008#0" expanded="true" />
-            <element signature="e#1050#1051#0" expanded="true" />
-            <element signature="e#1088#1089#0" expanded="true" />
-            <element signature="e#1119#1120#0" expanded="true" />
-            <element signature="e#1146#1147#0" expanded="true" />
-            <element signature="e#1186#1187#0" expanded="true" />
-            <element signature="e#1218#1219#0" expanded="true" />
-            <element signature="e#1247#1248#0" expanded="true" />
-            <element signature="e#1275#1276#0" expanded="true" />
-            <element signature="e#1314#1315#0" expanded="true" />
-            <element signature="e#1348#1349#0" expanded="true" />
-            <element signature="e#1394#1395#0" expanded="true" />
-            <element signature="e#1430#1431#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Model/Stock.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="654">
-          <caret line="62" column="6" selection-start-line="62" selection-start-column="6" selection-end-line="62" selection-end-column="6" />
-          <folding>
-            <element signature="e#319#320#0" expanded="true" />
-            <element signature="e#353#354#0" expanded="true" />
-            <element signature="e#641#642#0" expanded="true" />
-            <element signature="e#666#667#0" expanded="true" />
-            <element signature="e#741#742#0" expanded="true" />
-            <element signature="e#769#770#0" expanded="true" />
-            <element signature="e#756#757#0" expanded="true" />
-            <element signature="e#784#785#0" expanded="true" />
-            <element signature="e#967#968#0" expanded="true" />
-            <element signature="e#1001#1002#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Model/Order.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="19" column="7" selection-start-line="19" selection-start-column="7" selection-end-line="19" selection-end-column="7" />
-          <folding>
-            <element signature="e#706#707#0" expanded="true" />
-            <element signature="e#738#739#0" expanded="true" />
-            <element signature="e#836#837#0" expanded="true" />
-            <element signature="e#878#879#0" expanded="true" />
-            <element signature="e#861#862#0" expanded="true" />
-            <element signature="e#894#895#0" expanded="true" />
-            <element signature="e#943#944#0" expanded="true" />
-            <element signature="e#987#988#0" expanded="true" />
-            <element signature="e#1013#1014#0" expanded="true" />
-            <element signature="e#1038#1039#0" expanded="true" />
-            <element signature="e#1071#1072#0" expanded="true" />
-            <element signature="e#1099#1100#0" expanded="true" />
-            <element signature="e#1131#1132#0" expanded="true" />
-            <element signature="e#1162#1163#0" expanded="true" />
-            <element signature="e#1207#1208#0" expanded="true" />
-            <element signature="e#1247#1248#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Model/Customer.java">
-      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
-          <caret line="2" selection-start-line="2" selection-end-line="6" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Business_Logic/validators/EmailValidator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="29" lean-forward="true" selection-start-line="11" selection-start-column="29" selection-end-line="11" selection-end-column="29" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Business_Logic/validators/Validator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="66" selection-start-line="10" selection-start-column="66" selection-end-line="10" selection-end-column="66" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Business_Logic/validators/StockValidator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="73" selection-start-line="14" selection-start-column="73" selection-end-line="14" selection-end-column="73" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Business_Logic/StockBLL.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="569">
-          <caret line="96" column="57" selection-start-line="96" selection-start-column="57" selection-end-line="96" selection-end-column="57" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Business_Logic/validators/PriceValidator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="7" selection-start-line="10" selection-start-column="7" selection-end-line="10" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Business_Logic/ProductBLL.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1063">
-          <caret line="30" column="39" lean-forward="true" selection-start-line="30" selection-start-column="39" selection-end-line="30" selection-end-column="39" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Data_Access/Connection/ConnectionFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="714">
-          <caret line="98" column="86" selection-start-line="98" selection-start-column="86" selection-end-line="98" selection-end-column="86" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Data_Access/DAO/AbstractDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4743">
-          <caret line="279" column="67" selection-start-line="279" selection-start-column="67" selection-end-line="279" selection-end-column="67" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Data_Access/DAO/CustomerDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Data_Access/DAO/OrderDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="42" selection-start-line="5" selection-start-column="42" selection-end-line="5" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Data_Access/DAO/ProductDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="44" selection-start-line="5" selection-start-column="44" selection-end-line="5" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Data_Access/DAO/StockDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="29" lean-forward="true" selection-start-line="7" selection-start-column="29" selection-end-line="7" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Presentation/Views/ProductPanel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="705">
-          <caret line="162" column="29" selection-start-line="162" selection-start-column="29" selection-end-line="162" selection-end-column="29" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Presentation/Views/OrderPanel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="671">
-          <caret line="99" column="40" selection-start-line="99" selection-start-column="40" selection-end-line="99" selection-end-column="40" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Presentation/Views/View.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="671">
-          <caret line="156" column="33" selection-start-line="156" selection-start-column="33" selection-end-line="156" selection-end-column="33" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#4204#4205#0" expanded="true" />
-            <element signature="e#4240#4241#0" expanded="true" />
-            <element signature="e#4361#4362#0" expanded="true" />
-            <element signature="e#4396#4397#0" expanded="true" />
-            <element signature="e#4437#4438#0" expanded="true" />
-            <element signature="e#4470#4471#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Presentation/Views/CustomerPanel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="11" column="43" selection-start-line="11" selection-start-column="43" selection-end-line="11" selection-end-column="43" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#3251#3252#0" expanded="true" />
-            <element signature="e#3295#3296#0" expanded="true" />
-            <element signature="e#3339#3340#0" expanded="true" />
-            <element signature="e#3389#3390#0" expanded="true" />
-            <element signature="e#3434#3435#0" expanded="true" />
-            <element signature="e#3485#3486#0" expanded="true" />
-            <element signature="e#3526#3527#0" expanded="true" />
-            <element signature="e#3573#3574#0" expanded="true" />
-            <element signature="e#3616#3617#0" expanded="true" />
-            <element signature="e#3665#3666#0" expanded="true" />
-            <element signature="e#4580#4581#0" expanded="true" />
-            <element signature="e#4635#4636#0" expanded="true" />
-            <element signature="e#4705#4706#0" expanded="true" />
-            <element signature="e#4763#4764#0" expanded="true" />
-            <element signature="e#4833#4834#0" expanded="true" />
-            <element signature="e#4891#4892#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Presentation/Controllers/OrderController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1725">
-          <caret line="153" column="49" selection-start-line="153" selection-start-column="49" selection-end-line="153" selection-end-column="49" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Presentation/Controllers/ProductController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="714">
-          <caret line="82" column="7" lean-forward="true" selection-start-line="82" selection-start-column="7" selection-end-line="82" selection-end-column="83" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Presentation/Controllers/CustomerController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="22" column="7" lean-forward="true" selection-start-line="22" selection-start-column="7" selection-end-line="22" selection-end-column="83" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://d3dccde0-a2bc-4cd3-9fea-5cd821bb3e6d/schema/warehouse/table/stock">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Business_Logic/CustomerBLL.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="20" column="13" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
         </state>
       </provider>
     </entry>
@@ -833,7 +244,6 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>Order_Manager</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
